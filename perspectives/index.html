@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Photography Gallery</title>
+    <title>Gallery - Innovations Brand</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            background: #0d0d0d;
+            color: #eaeaea;
+            font-family: 'Arial', sans-serif;
         }
-        h1 {
-            color: #333;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        nav a {
+            color: #eaeaea;
+            text-decoration: none;
+            padding: 14px 20px;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 10px;
-            width: 100%;
-            max-width: 1200px;
+            padding: 20px;
         }
         .gallery img {
             width: 100%;
-            height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Nature Photography Gallery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <h1>Gallery</h1>
+    </nav>
     <div class="gallery">
-        <img src="https://example.com/nature1.jpg" alt="Nature Photo 1">
-        <img src="https://example.com/nature2.jpg" alt="Nature Photo 2">
-        <img src="https://example.com/nature3.jpg" alt="Nature Photo 3">
-        <img src="https://example.com/nature4.jpg" alt="Nature Photo 4">
-        <img src="https://example.com/nature5.jpg" alt="Nature Photo 5">
+        <img src="image1.jpg" alt="Gallery Image 1">
+        <img src="image2.jpg" alt="Gallery Image 2">
+        <img src="image3.jpg" alt="Gallery Image 3">
+        <img src="image4.jpg" alt="Gallery Image 4">
+        <!-- Add more images as needed -->
     </div>
 </body>
 </html>
